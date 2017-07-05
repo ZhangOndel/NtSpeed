@@ -180,7 +180,6 @@ __strong static id _sharedObject;
 		}		
 		if(label&&springboardWindow) {
 			long speed = nowData-oldSpeed;
-			[springboardWindow setHidden:speed==0?YES:NO];
 			label.text = bytesFormat(speed);
 		}
 		oldSpeed = nowData;
