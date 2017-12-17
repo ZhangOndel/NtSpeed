@@ -157,6 +157,7 @@ __strong static id _sharedObject;
 			label.numberOfLines = 1;
 			label.textColor = [UIColor whiteColor];
 			label.baselineAdjustment = YES;
+			label.font = [UIFont boldSystemFontOfSize:8];
 			label.adjustsFontSizeToFitWidth = YES;
 			label.adjustsLetterSpacingToFitWidth = YES;
 			label.textAlignment = NSTextAlignmentCenter;
@@ -180,7 +181,6 @@ __strong static id _sharedObject;
 		}		
 		if(label&&springboardWindow) {
 			long speed = nowData-oldSpeed;
-			[springboardWindow setHidden:speed==0?YES:NO];
 			label.text = bytesFormat(speed);
 		}
 		oldSpeed = nowData;
