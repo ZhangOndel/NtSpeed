@@ -161,6 +161,7 @@ __strong static id _sharedObject;
 			label.numberOfLines = 1;
 			label.textColor = [UIColor whiteColor];
 			label.baselineAdjustment = YES;
+			label.font = [UIFont boldSystemFontOfSize:9]
 			label.adjustsFontSizeToFitWidth = YES;
 			label.adjustsLetterSpacingToFitWidth = YES;
 			label.textAlignment = NSTextAlignmentCenter;
